@@ -14,15 +14,12 @@
 }
 header{
   grid-area: header;
-  background: gray;
 }
 footer{
   grid-area: footer;
-  background: gray;
 }
 nav{
   grid-area: menu;
-  background: black;
   color: white;
 }
 button{
