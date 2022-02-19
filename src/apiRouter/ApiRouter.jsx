@@ -5,7 +5,7 @@ import SideBar from "../components/parts/Sidebar";
 import Todo from "../components/screen/Todo";
 import Home from "../components/screen/Home";
 import { ModeProvider } from "../context/Mode-context";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 const ApiRouter = () => {
 let {mode,setMode} = useContext(ModeProvider);
 let light = {background:"white",color:"black",border:"2px solid black",isMode:false}
