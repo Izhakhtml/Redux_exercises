@@ -1,0 +1,42 @@
+.App {
+  text-align: center;
+}
+.base_container{
+  display: grid;
+  grid-template-areas: 
+  'header header header header header'
+  'menu main main main main '
+  'menu main main main main '
+  'footer footer footer footer footer';
+  grid-template-rows: 20% 10% 50%;
+  width: 100vw;
+  height: 100vh;
+}
+header{
+  grid-area: header;
+  background: gray;
+}
+footer{
+  grid-area: footer;
+  background: gray;
+}
+nav{
+  grid-area: menu;
+  background: black;
+  color: white;
+}
+button{
+  padding: 10px;
+}
+.base_redux{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+
+}
+.div_redux{
+  border: 2px solid black;
+  width: 25vw;
+  height: 35vh;
+  margin: 5px;
+}
