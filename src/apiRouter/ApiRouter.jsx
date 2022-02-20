@@ -7,18 +7,11 @@ import Home from "../components/screen/Home";
 import { ModeProvider } from "../context/Mode-context";
 import { useContext } from "react";
 const ApiRouter = () => {
-let {mode,setMode} = useContext(ModeProvider);
-let light = {background:"white",color:"black",border:"2px solid black",isMode:false}
-let dark = {background:"black",color:"white",border:"2px solid white",isMode:true}
-    return (
+let {mode} = useContext(ModeProvider);
+ return (
         <div className="base_container" style={{background:mode.background,color:mode.color}}>
             <BrowserRouter>
                 <Header />
-                <button onClick={()=>{
-                    mode.isMode?
-                    setMode(light):
-                    setMode(dark)
-                }}>CHANGE</button>
                 <SideBar />
                 <Routes>
                     <Route exact path="/" element={<Home />} />
